@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Your Name</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Portfolio</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <button class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Abalos Jester</span>
+          </h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            I create beautiful, responsive web applications with modern technologies.
+            Passionate about clean code and great user experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-placeholder">
+             <img src="dp.png" alt="Hero Image" class="hero-image-placeholder" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate Full Stack Developer with experience in creating
+              web applications using modern technologies. I love turning complex
+              problems into simple, beautiful designs.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open source projects, or enjoying the outdoors.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>5+</h3>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat">
+                <h3>3+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat">
+                <h3>14+</h3>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <span class="skill-item">HTML5</span>
+              <span class="skill-item">CSS3</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">React</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-items">
+              <span class="skill-item">Node.js</span>
+              <span class="skill-item">PHP</span>
+              <span class="skill-item">Laravel</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database</h3>
+            <div class="skill-items">
+              <span class="skill-item">MySQL</span>
+              <span class="skill-item">MongoDB</span>
+              <span class="skill-item">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <div class="skill-items">
+              <span class="skill-item">Git</span>
+              <span class="skill-item">Canva</span>
+              <span class="skill-item">Figma</span>
+              <span class="skill-item">Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-project="1">
+            <div class="project-image">
+              <img src="./ecommerce.png" alt="E-Commerce App">
+              <div class="project-overlay">
+                <button class="btn btn-small project-view">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-stack e-commerce solution with payment integration and admin dashboard.</p>
+              <div class="project-tech">
+                <span>Html 5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="2">
+            <div class="project-image">
+              <img src="documents.png" alt="Docs App">
+              <div class="project-overlay">
+                <button class="btn btn-small project-view">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Documents Project System</h3>
+              <p>Is a web-based application that allows users (such as students, employees, or admins) to upload, manage, download, and organize documents or files. This can be used in schools, offices, or project teams to centralize file access.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>Html 5</span>
+                <span>CSS 3</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="3">
+            <div class="project-image">
+              <img src="mobile.png" alt="Task Manager">
+              <div class="project-overlay">
+                <button class="btn btn-small project-view">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Mobile App</h3>
+              <p>A mobile app is a type of software specifically developed to operate on handheld devices such as smartphones and tablets.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Tailwind Css</span>
+                <span>JavaScript</span>
+                <span>firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>I'm always interested in new opportunities and exciting projects.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <span>jesterabalos244@gmail.com</span>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-phone"></i>
+                <span>+63 963 8957 920</span>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Rizal, Phillipines</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Jester Abalos. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-body">
+          <h3 id="modal-title">Project Title</h3>
+          <img id="modal-image" src="" alt="Project Image">
+          <p id="modal-description">Project description goes here...</p>
+          <div class="modal-tech" id="modal-tech">
+            <!-- Tech stack will be inserted here -->
+          </div>
+          <div class="modal-links">
+            <a href="#" class="btn btn-primary" id="modal-live">Live Demo</a>
+            <a href="#" class="btn btn-secondary" id="modal-github">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
